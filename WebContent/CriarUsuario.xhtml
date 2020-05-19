@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+
+
+<h:head>
+	<title>Criar Usuário</title>
+</h:head>
+
+<h:body>
+	<h:form>
+		<p:dialog header="Criar Usuário" modal="true" visible="true">
+			<p:panelGrid columns="2">
+				<p:outputLabel value="Nome" />
+				<p:inputText value="#{UsuarioBean.txtNome}" />
+				<p:outputLabel value="Email:" />
+				<p:inputText value="#{UsuarioBean.txtEmail}" />
+				<p:outputLabel value="cpf" />
+				<p:inputNumber value="#{UsuarioBean.txtCpf}" />
+				<p:outputLabel value="Senha" />
+				<p:inputText  value="#{UsuarioBean.txtSenha}" />
+				
+			</p:panelGrid>
+
+			<p:panelGrid columns="2">
+				<p:commandButton value="Voltar" action="Login" />
+				<p:commandButton value="Cadastrar" update="@form" action="#{UsuarioBean.criarUsuario}" />
+			</p:panelGrid>
+
+		</p:dialog>
+	</h:form>
+</h:body>
+</html>

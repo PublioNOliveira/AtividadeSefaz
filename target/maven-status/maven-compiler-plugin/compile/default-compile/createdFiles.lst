@@ -1,0 +1,14 @@
+dao\VeiculoDAO.class
+dao\VeiculoDAOImpl.class
+dao\PecaDAOImpl.class
+test\TesteConexao.class
+controle\UsuarioBean.class
+util\JpaUtil.class
+controle\VeiculoBean.class
+entidades\Peca.class
+dao\PecaDAO.class
+entidades\Veiculo.class
+controle\PecaBean.class
+dao\UsuarioDAO.class
+dao\UsuarioDAOImpl.class
+entidades\Usuario.class

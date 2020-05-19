@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+
+
+<h:head>
+	<title>Cadastrar Veículo</title>
+</h:head>
+
+<h:body>
+	<h:form>
+		<p:dialog header="Cadastrar Veiculo" modal="true" visible="true">
+			<p:panelGrid columns="2">
+				<p:outputLabel value="Modelo" />
+				<p:inputText value="#{VeiculoBean.txtModelo}" />
+				<p:outputLabel value="Marca" />
+				<p:inputText value="#{VeiculoBean.txtModelo}" />
+				<p:outputLabel value="Ano" />
+				<p:inputNumber  value="#{VeiculoBean.txtAno}" />
+			</p:panelGrid>
+
+			<p:panelGrid columns="2">
+				<p:commandButton value="Voltar" action="PesquisarVeiculo" />
+				<p:commandButton value="Cadastrar" update="@form" action="#{VeiculoBean.criarVeiculo}"  />
+			</p:panelGrid>
+
+		</p:dialog>
+	</h:form>
+</h:body>
+</html>

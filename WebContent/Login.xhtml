@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+
+
+<h:head>
+<title> LOGIN </title>
+
+</h:head>
+<h:body>
+	<h:form>
+	<p:dialog header="Login" modal="true" visible="true">    
+		<p:panelGrid columns="2" >
+		<p:outputLabel value="Email:" />
+		<p:inputText value="#{UsuarioBean.txtEmail}" />
+
+		<p:outputLabel value="Senha:" />
+		<p:password value="#{UsuarioBean.txtSenha}" />
+		</p:panelGrid>
+		
+		<p:panelGrid columns="2" >
+		<p:commandButton value="Entrar" action="#{UsuarioBean.entrar}"  />
+		<p:commandButton value="Criar Usuário" action="CriarUsuario" />
+		</p:panelGrid>
+	</p:dialog>	
+	</h:form>
+</h:body>
+</html>
